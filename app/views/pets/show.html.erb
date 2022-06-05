@@ -6,6 +6,10 @@
   <p><strong>Found On:</strong> <%= @pet.found_on %></p>
 </div>
 
-<%= link_to 'Edit', edit_pet_path(@pet) %>
-<%= link_to 'Delete', pet_path(@pet), method: :delete %>
-<%= link_to 'Back to All Pets', pets_path %>
+<p>
+  <%= link_to 'Edit', edit_pet_path(@pet), class: 'btn btn-warning' %>
+  <%= link_to 'Delete', pet_path(@pet), class: 'btn btn-danger', method: :delete %>
+</p>
+<p>
+  <%= link_to 'Back to All Pets', pets_path %>
+</p>

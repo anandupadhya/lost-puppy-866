@@ -1,3 +1,11 @@
+<% unless @pets.empty? %>
+  <p>There are <%= @pets.count %> lost pets</p>
+<% else %>
+  <p>No lost pets at the moment</p>
+<% end %>
+
+<%= render 'message' %>
+
 <div class="container">
   <% @pets.each do |pet| %>
     <%= link_to pet_path(pet) do %>

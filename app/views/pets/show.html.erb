@@ -1,0 +1,11 @@
+<h2><%= @pet.name.upcase %></h2>
+
+<div>
+  <p><strong>Species:</strong> <%= @pet.species.capitalize %></p>
+  <p><strong>Address:</strong> <%= @pet.address %></p>
+  <p><strong>Found On:</strong> <%= @pet.found_on %></p>
+</div>
+
+<%= link_to 'Edit', edit_pet_path(@pet) %>
+<%= link_to 'Delete', pet_path(@pet), method: :delete %>
+<%= link_to 'Back to All Pets', pets_path %>

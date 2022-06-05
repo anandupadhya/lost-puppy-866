@@ -1,0 +1,10 @@
+<div class="container">
+  <% @pets.each do |pet| %>
+    <%= link_to pet_path(pet) do %>
+      <div class="card">
+        <h3><%= pet.name %></h3>
+        <p>A <%= pet.species %> found on <%= pet.address %> (<%= pet.found_on %>)</p>
+      </div>
+    <% end %>
+  <% end %>
+</div>

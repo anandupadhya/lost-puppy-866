@@ -10,7 +10,10 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="container">
+    <h1>Lost Puppy</h1>
+    <%= link_to 'Add Lost Pet', new_pet_path %>
+    <hr/>
     <%= yield %>
   </body>
 </html>

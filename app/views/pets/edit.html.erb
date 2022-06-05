@@ -1,0 +1,5 @@
+<h2>Edit: <%= @pet.name %></h2>
+
+<%= render 'form', pet: @pet, btn_label: 'Update', btn_class: 'btn-warning' %>
+
+<%= link_to 'Cancel', pet_path(@pet) %>
